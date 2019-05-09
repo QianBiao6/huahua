@@ -1,0 +1,23 @@
+server: 
+  port: 9004
+spring: 
+  application:  
+    name: huahua-article #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.85.129:3306/huahua_article?useUnicode=true&amp;characterEncoding=UTF8
+    username: root
+    password: 123456
+  jpa: 
+    database: MySQL
+    show-sql: true
+#redis
+  redis:
+    host: 192.168.85.129
+    port: 6379
+#mongodb的配置
+  data:
+    mongodb:
+      host: 192.168.85.129
+      port: 27017
+      database: recruitdb

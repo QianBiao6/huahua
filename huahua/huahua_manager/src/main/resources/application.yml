@@ -1,0 +1,23 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: huahua-manager
+#注册到eureka服务中
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    prefer-ip-address: true
+
+zuul:
+  routes:
+    tensquare-base:
+      path: /base/**
+      serviceId: huahua-base
+
+jwt:
+  config:
+    key: itcast
+

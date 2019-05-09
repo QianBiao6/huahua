@@ -1,0 +1,10 @@
+server:
+  port: 9007
+
+spring:
+  application:
+    name: huahua-search
+
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.85.129:9300       #如果在window环境下启动es 9300
